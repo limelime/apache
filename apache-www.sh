@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-# Description: Setup apache.
+# Description: Setup Apache.
 
 WEB_ROOT_DIR=$1
 APACHE_SYMBOLIC_NAME=$2
