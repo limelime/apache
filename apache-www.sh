@@ -8,14 +8,14 @@ APACHE_SYMBOLIC_NAME=$2
 # Error handling
 ##################
 if [ $# -ne 2 ]; then
-	echo "Error: Missing arguments. Aborted!"
+	echo "$0: Error: Missing arguments. Aborted!"
 	echo "   e.g.: $0  WEB_ROOT_DIR APACHE_SYMBOLIC_NAME"
 	echo "   e.g.: $0  /path/to/drupal/ opw"
 	exit 1;
 fi
 
 if [ ! -d ${WEB_ROOT_DIR} ]; then
-  echo "Error: ${WEB_ROOT_DIR} is not a directory."
+  echo "$0: Error: ${WEB_ROOT_DIR} is not a directory."
   exit 1;
 fi
 
